@@ -4,12 +4,10 @@ const path = require("path");
 
 const PORT = 3000;
 
-// version endpoint
 app.get("/version", (req, res) => {
-  res.send("4"); // change number when new update
+  res.send("4"); 
 });
 
-// firmware endpoint
 app.get("/firmware.bin", (req, res) => {
   res.sendFile(path.join(__dirname, "firmware.bin"));
 });

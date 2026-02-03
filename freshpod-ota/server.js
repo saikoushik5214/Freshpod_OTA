@@ -5,7 +5,7 @@ const path = require("path");
 const PORT = 3000;
 
 app.get("/version", (req, res) => {
-  res.send("7"); 
+  res.send("8"); 
 });
 
 app.get("/firmware.bin", (req, res) => {
